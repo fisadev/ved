@@ -1,8 +1,3 @@
-#!/usr/bin/env -S uv run
-# /// script
-# requires-python = ">=3.11"
-# dependencies = []
-# ///
 """FFmpeg utilities wrapper."""
 import argparse
 import os
