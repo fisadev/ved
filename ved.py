@@ -63,10 +63,11 @@ def cmd_process(args):
         main_idx = 1
     else:
         main_idx = 0
-        if args.trim:
-            start, end = parse_range(args.trim)
-            if start: cmd += ['-ss', start]
-            if end: cmd += ['-to', end]
+
+    if args.trim:
+        start, end = parse_range(args.trim)
+        if start: cmd += ['-ss', start]
+        if end: cmd += ['-to', end]
 
     cmd += ['-i', args.input]
     for inp in extra_inputs:
