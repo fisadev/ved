@@ -1,0 +1,10 @@
+[project]
+name = "ved"
+version = "0.1.0"
+description = "A simple wrapper for some common video editing actions with ffmpeg"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+ved = "ved:main"
